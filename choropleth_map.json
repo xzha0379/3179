@@ -8,6 +8,19 @@
     },
     "layer": [
         {
+           "data" : {
+               "url": "ne_10m_ocean.json",
+               "format": {
+                   "type": "topojson"
+                   "feature": "ne_10m_ocean"
+               }
+           },
+            "mark": {
+                "type": "geoshape",
+                "fill": "skyblue"
+            }
+        },
+        {
             "data": {
                 "url": "ne_110m_graticules_30.json",
                 "format": {
@@ -57,7 +70,7 @@
                     "title": "Proportion in extreme poverty",
                     "scale": {
                         "type": "threshold",
-                        "scheme": "blues",
+                        "scheme": "greens",
                         "domain": [10, 20, 30, 40, 50]
                     }
                 },
